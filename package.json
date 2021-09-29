@@ -1,0 +1,30 @@
+{
+  "name": "fast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " tap \"test/**/*.test.js\" --no-coverage",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js",
+    "reload": "nodemon fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.3.1",
+    "fastify-cli": "^2.13.0",
+    "fastify-mongodb": "^2.0.1",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.0",
+    "fastify-swagger": "^4.8.3",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "tap": "^15.0.9",
+    "nodemon": "^2.0.12"
+  }
+}
